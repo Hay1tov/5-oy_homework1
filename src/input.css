@@ -12,6 +12,6 @@
 
 @layer {
   .section-container {
-    @apply max-w-[1208px] container mx-auto px-4 py-24;
+    @apply max-w-[1208px] container mx-auto px-4 pt-30;
   }
 }
