@@ -10,7 +10,7 @@
   --font-primary: Rubik;
 }
 
-@layer {
+@layer{
   .section-container {
     @apply max-w-[1208px] container mx-auto px-4 pt-30;
   }
