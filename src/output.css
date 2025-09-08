@@ -269,6 +269,9 @@
   .flex {
     display: flex;
   }
+  .hidden {
+    display: none;
+  }
   .table {
     display: table;
   }
@@ -392,6 +395,9 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
@@ -488,6 +494,9 @@
   }
   .px-7 {
     padding-inline: calc(var(--spacing) * 7);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
   }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
@@ -602,14 +611,14 @@
       outline-style: none;
     }
   }
+  .md\:hidden {
+    @media (width >= 48rem) {
+      display: none;
+    }
+  }
   .xl\:h-\[420px\] {
     @media (width >= 80rem) {
       height: 420px;
-    }
-  }
-  .xl\:w-2 {
-    @media (width >= 80rem) {
-      width: calc(var(--spacing) * 2);
     }
   }
   .xl\:w-\[224px\] {
