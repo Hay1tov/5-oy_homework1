@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="../src/js/index.js" defer></script>
   <link rel="stylesheet" href="./output.css">
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -19,7 +20,7 @@
         <img src="./images/logo/Северяночка.png" alt="" class="w-[100px] h-[10px]">
       </div>
       <div class="flex gap-4">
-        <div class="py-2 px-3 rounded-[8px] bg-[#70C05B] flex items-center gap-4">
+        <div onclick="katalog" class="py-2 px-3 rounded-[8px] bg-[#70C05B] flex items-center gap-4 cursor-pointer">
           <i class="fa-solid fa-bars text-white "></i>
           <p class=" text-white ">Каталог</p>
         </div>
@@ -58,109 +59,9 @@
     <div>
       <div class="flex justify-between items-center">
         <h1 class="text-4xl text-primary font-bold">Акции</h1>
-        <p class="text-secondary text-[16px]">Все продукты ></p>
       </div>
-      <div class="mt-10 flex justify-between">
-        <div class="w-[272px] h-[349px] bg-white shadow-sm rounded-[8px]">
-          <div>
-            <img src="./images/discount/product1.png" alt="" class="rounded-t-lg rounded-r-lg">
-          </div>
-          <div>
-            <div class="flex justify-between mb-2">
-              <div class="ml-2">
-                <h2 class="text-primary font-bold text-[18px] mt-2">44,50 ₽</h2>
-                <p class="text-secondary font-normal text-[12px]">С картой</p>
-              </div>
-              <div class="mr-2">
-                <h2 class="text-tertiary text-[16px] mt-2">50,50 ₽</h2>
-                <p class="text-secondary font-normal text-[12px]">Обычная</p>
-              </div>
-            </div>
-            <div>
-              <p class="leading-[150%] ml-2 text-primary">Г/Ц Блинчики с мясом вес, Россия</p>
-            </div>
-            <div class="ml-2 mt-8">
-              <button
-                class="border-accent text-accent border-[2px] w-64 h-10 rounded-[6px] hover:bg-[#FF6633] hover:border-[#FF6633] hover:text-white">В
-                корзину</button>
-            </div>
-          </div>
-        </div>
-        <div class="w-[272px] h-[349px] bg-white shadow-sm rounded-[8px]">
-          <div>
-            <img src="./images/discount/product2.png" alt="" class="rounded-t-lg rounded-r-lg">
-          </div>
-          <div>
-            <div class="flex justify-between mb-2">
-              <div class="ml-2">
-                <h2 class="text-primary font-bold text-[18px] mt-2">44,50 ₽</h2>
-                <p class="text-secondary font-normal text-[12px]">С картой</p>
-              </div>
-              <div class="mr-2">
-                <h2 class="text-tertiary text-[16px] mt-2">50,50 ₽</h2>
-                <p class="text-secondary font-normal text-[12px]">Обычная</p>
-              </div>
-            </div>
-            <div>
-              <p class="leading-[150%] ml-2 text-primary">Молоко ПРОСТОКВАШИНО паст. питьевое цельное отборное...</p>
-            </div>
-            <div class="ml-2 mt-8">
-              <button
-                class="border-accent text-accent border-[2px] w-64 h-10 rounded-[6px] hover:bg-[#FF6633] hover:border-[#FF6633] hover:text-white">В
-                корзину</button>
-            </div>
-          </div>
-        </div>
-        <div class="w-[272px] h-[349px] bg-white shadow-sm rounded-[8px]">
-          <div>
-            <img src="./images/discount/product3.png" alt="" class="rounded-t-lg rounded-r-lg">
-          </div>
-          <div>
-            <div class="flex justify-between mb-2">
-              <div class="ml-2">
-                <h2 class="text-primary font-bold text-[18px] mt-2">44,50 ₽</h2>
-                <p class="text-secondary font-normal text-[12px]">С картой</p>
-              </div>
-              <div class="mr-2">
-                <h2 class="text-tertiary text-[16px] mt-2">50,50 ₽</h2>
-                <p class="text-secondary font-normal text-[12px]">Обычная</p>
-              </div>
-            </div>
-            <div>
-              <p class="leading-[150%] ml-2 text-primary">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</p>
-            </div>
-            <div class="ml-2 mt-8">
-              <button
-                class="border-accent text-accent border-[2px] w-64 h-10 rounded-[6px] hover:bg-[#FF6633] hover:border-[#FF6633] hover:text-white">В
-                корзину</button>
-            </div>
-          </div>
-        </div>
-        <div class="w-[272px] h-[349px] bg-white shadow-sm rounded-[8px]">
-          <div>
-            <img src="./images/discount/product4.png" alt="" class="rounded-t-lg rounded-r-lg">
-          </div>
-          <div>
-            <div class="flex justify-between mb-2">
-              <div class="ml-2">
-                <h2 class="text-primary font-bold text-[18px] mt-2">44,50 ₽</h2>
-                <p class="text-secondary font-normal text-[12px]">С картой</p>
-              </div>
-              <div class="mr-2">
-                <h2 class="text-tertiary text-[16px] mt-2">50,50 ₽</h2>
-                <p class="text-secondary font-normal text-[12px]">Обычная</p>
-              </div>
-            </div>
-            <div>
-              <p class="leading-[150%] ml-2 text-primary">Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...</p>
-            </div>
-            <div class="ml-2 mt-8">
-              <button
-                class="border-accent text-accent border-[2px] w-64 h-10 rounded-[6px] hover:bg-[#FF6633] hover:border-[#FF6633] hover:text-white">В
-                корзину</button>
-            </div>
-          </div>
-        </div>
+      <div id="discoundCards" class="mt-10 flex justify-between flex-wrap gap-y-10">
+
       </div>
     </div>
 
@@ -374,7 +275,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section>  
 
   <!-- stores map section-->
   <section class="section-container">
