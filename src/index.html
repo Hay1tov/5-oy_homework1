@@ -13,14 +13,14 @@
 <body class="font-primary bg-[#FBF8EC]">
 
   <!-- Header section -->
-  <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50 ">
+  <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-100 ">
     <nav class="max-w-[1208px] container mx-auto p-4 flex items-center justify-between">
       <div class="flex items-center gap-[11px]">
         <img src="./images/logo/main-logo.png" alt="" class="w-10 h-8">
         <img src="./images/logo/Северяночка.png" alt="" class="w-[100px] h-[10px]">
       </div>
       <div class="flex gap-4">
-        <div onclick="katalog" class="py-2 px-3 rounded-[8px] bg-[#70C05B] flex items-center gap-4 cursor-pointer">
+        <div id="catalogBtn" class="py-2 px-3 rounded-[8px] bg-[#70C05B] flex items-center gap-4 cursor-pointer">
           <i class="fa-solid fa-bars text-white "></i>
           <p class=" text-white ">Каталог</p>
         </div>
@@ -50,7 +50,33 @@
     </nav>
   </header>
 
-  <img src="./images/Sliders.png" alt="" class="mt-22 w-full">
+  <div id="catalogMenu" class="fixed z-50 w-full h-[248px] bg-white shadow-md hidden">
+    <div class="max-w-[1208px] container mx-auto px-4 mt-10 flex justify-between">
+      <div class="flex flex-col gap-6">
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Молоко, сыр, яйцо</a>
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Фрукты и овощи</a>
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Хлеб</a>
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Замороженные продукты</a>
+      </div>
+      <div class="flex flex-col gap-6">
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Напитки</a>
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Кондитерские изделия</a>
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Чай, кофе</a>
+      </div>
+      <div class="flex flex-col gap-6">
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Бакалея</a>
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Здоровое питание</a>
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Зоотовары</a>
+      </div>
+      <div class="flex flex-col gap-6">
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Непродовольственные товары</a>
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Детское питание</a>
+        <a href="#" class="text-primary font-bold hover:text-[#FF6633]">Мясо, птица, колбаса</a>
+      </div>
+    </div>
+  </div>
+
+  <img src="./images/Sliders.png" alt="" class="mt-21 w-full">
 
   <!-- products section -->
   <section class="section-container">
@@ -61,188 +87,6 @@
         <h1 class="text-4xl text-primary font-bold">Акции</h1>
       </div>
       <div id="discoundCards" class="mt-10 flex justify-between flex-wrap gap-y-10">
-
-      </div>
-    </div>
-
-    <!-- new items section-->
-    <div class="mt-30">
-      <div class="flex justify-between items-center">
-        <h1 class="text-4xl text-primary font-bold">Новинки</h1>
-        <p class="text-secondary text-[16px]">Все продукты ></p>
-      </div>
-      <div class="mt-10 flex justify-between">
-        <div class="w-[272px] h-[349px] bg-white shadow-sm rounded-[8px]">
-          <div>
-            <img src="./images/new-items/img1.png" alt="" class="rounded-t-lg rounded-r-lg">
-          </div>
-          <div>
-            <div class="mb-2">
-              <div class="ml-2">
-                <h2 class="text-primary font-bold text-[18px] mt-2">599,99 ₽</h2>
-              </div>
-            </div>
-            <div class="mt-[26px]">
-              <p class="leading-[150%] ml-2 text-primary">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
-            </div>
-            <div class="ml-2 mt-8">
-              <button
-                class="border-accent text-accent border-[2px] w-64 h-10 rounded-[6px] hover:bg-[#FF6633] hover:border-[#FF6633] hover:text-white">В
-                корзину</button>
-            </div>
-          </div>
-        </div>
-        <div class="w-[272px] h-[349px] bg-white shadow-sm rounded-[8px]">
-          <div>
-            <img src="./images/new-items/img2.png" alt="" class="rounded-t-lg rounded-r-lg">
-          </div>
-          <div>
-            <div class="mb-2">
-              <div class="ml-2">
-                <h2 class="text-primary font-bold text-[18px] mt-2">44,50 ₽</h2>
-              </div>
-            </div>
-            <div class="mt-[26px]">
-              <p class="leading-[150%] ml-2 text-primary">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</p>
-            </div>
-            <div class="ml-2 mt-8">
-              <button
-                class="border-accent text-accent border-[2px] w-64 h-10 rounded-[6px] hover:bg-[#FF6633] hover:border-[#FF6633] hover:text-white">В
-                корзину</button>
-            </div>
-          </div>
-        </div>
-        <div class="w-[272px] h-[349px] bg-white shadow-sm rounded-[8px]">
-          <div>
-            <img src="./images/new-items/img3.png" alt="" class="rounded-t-lg rounded-r-lg">
-          </div>
-          <div>
-            <div class="mb-2">
-              <div class="ml-2">
-                <h2 class="text-primary font-bold text-[18px] mt-2">599,99 ₽</h2>
-              </div>
-            </div>
-            <div class="mt-[26px]">
-              <p class="leading-[150%] ml-2 text-primary">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
-            </div>
-            <div class="ml-2 mt-8">
-              <button
-                class="border-accent text-accent border-[2px] w-64 h-10 rounded-[6px] hover:bg-[#FF6633] hover:border-[#FF6633] hover:text-white">В
-                корзину</button>
-            </div>
-          </div>
-        </div>
-        <div class="w-[272px] h-[349px] bg-white shadow-sm rounded-[8px]">
-          <div>
-            <img src="./images/new-items/img4.png" alt="" class="rounded-t-lg rounded-r-lg">
-          </div>
-          <div>
-            <div class="mb-2">
-              <div class="ml-2">
-                <h2 class="text-primary font-bold text-[18px] mt-2">49,39 ₽</h2>
-              </div>
-            </div>
-            <div class="mt-[26px]">
-              <p class="leading-[150%] ml-2 text-primary">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
-            </div>
-            <div class="ml-2 mt-8">
-              <button
-                class="border-accent text-accent border-[2px] w-64 h-10 rounded-[6px] hover:bg-[#FF6633] hover:border-[#FF6633] hover:text-white">В
-                корзину</button>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- purchased section -->
-    <div class="mt-30">
-      <div class="flex justify-between items-center">
-        <h1 class="text-4xl text-primary font-bold">Покупали раньше</h1>
-        <p class="text-secondary text-[16px]">Все продукты ></p>
-      </div>
-      <div class="mt-10 flex justify-between">
-        <div class="w-[272px] h-[349px] bg-white shadow-sm rounded-[8px]">
-          <div>
-            <img src="./images/purchased/product1.png" alt="" class="rounded-t-lg rounded-r-lg">
-          </div>
-          <div>
-            <div class="mb-2">
-              <div class="ml-2">
-                <h2 class="text-primary font-bold text-[18px] mt-2">79,99 ₽</h2>
-              </div>
-            </div>
-            <div class="mt-[26px]">
-              <p class="leading-[150%] ml-2 text-primary">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
-            </div>
-            <div class="ml-2 mt-8">
-              <button
-                class="border-accent text-accent border-[2px] w-64 h-10 rounded-[6px] hover:bg-[#FF6633] hover:border-[#FF6633] hover:text-white">В
-                корзину</button>
-            </div>
-          </div>
-        </div>
-        <div class="w-[272px] h-[349px] bg-white shadow-sm rounded-[8px]">
-          <div>
-            <img src="./images/purchased/product2.png" alt="" class="rounded-t-lg rounded-r-lg">
-          </div>
-          <div>
-            <div class="mb-2">
-              <div class="ml-2">
-                <h2 class="text-primary font-bold text-[18px] mt-2">159,99 ₽</h2>
-              </div>
-            </div>
-            <div class="mt-[26px]">
-              <p class="leading-[150%] ml-2 text-primary">Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...</p>
-            </div>
-            <div class="ml-2 mt-8">
-              <button
-                class="border-accent text-accent border-[2px] w-64 h-10 rounded-[6px] hover:bg-[#FF6633] hover:border-[#FF6633] hover:text-white">В
-                корзину</button>
-            </div>
-          </div>
-        </div>
-        <div class="w-[272px] h-[349px] bg-white shadow-sm rounded-[8px]">
-          <div>
-            <img src="./images/purchased/product3.png" alt="" class="rounded-t-lg rounded-r-lg">
-          </div>
-          <div>
-            <div class="mb-2">
-              <div class="ml-2">
-                <h2 class="text-primary font-bold text-[18px] mt-2">599,99 ₽</h2>
-              </div>
-            </div>
-            <div class="mt-[26px]">
-              <p class="leading-[150%] ml-2 text-primary">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
-            </div>
-            <div class="ml-2 mt-8">
-              <button
-                class="border-accent text-accent border-[2px] w-64 h-10 rounded-[6px] hover:bg-[#FF6633] hover:border-[#FF6633] hover:text-white">В
-                корзину</button>
-            </div>
-          </div>
-        </div>
-        <div class="w-[272px] h-[349px] bg-white shadow-sm rounded-[8px]">
-          <div>
-            <img src="./images/purchased/product4.png" alt="" class="rounded-t-lg rounded-r-lg">
-          </div>
-          <div>
-            <div class="mb-2">
-              <div class="ml-2">
-                <h2 class="text-primary font-bold text-[18px] mt-2">49,39 ₽</h2>
-              </div>
-            </div>
-            <div class="mt-[26px]">
-              <p class="leading-[150%] ml-2 text-primary">Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»</p>
-            </div>
-            <div class="ml-2 mt-8">
-              <button
-                class="border-accent text-accent border-[2px] w-64 h-10 rounded-[6px] hover:bg-[#FF6633] hover:border-[#FF6633] hover:text-white">В
-                корзину</button>
-            </div>
-          </div>
-        </div>
 
       </div>
     </div>
@@ -275,7 +119,7 @@
         </div>
       </div>
     </div>
-  </section>  
+  </section>
 
   <!-- stores map section-->
   <section class="section-container">
